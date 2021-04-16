@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <head>
+      <style type="text/css">
+         canvas{
+            float: left;
+            margin-right: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <canvas width = "360" height = "360" id = "my_Canvas" style="background-color: gray;"></canvas>
+      
+      <div class="selection">
+         <p style="font-size: 25px; font-family: sans-serif; color: red;" >Pilih ukuran untuk memunculkan objek</p>
+         <p style="font-size: 15px; font-family: sans-serif; color: blue;">Increasing/Decreasing Size:</p>
+         <select id="size" style="color: red; font-family: sans-serif;" >
+            <option value="0">0</option>
+            <option value="1.5">1.5</option>
+            <option value="1">1</option>
+            <option value="-0.5">-0.5</option>
+         </select>
+         <button onclick="showValue()">Submit</button>
+      </div>
+   </body>
+      <script type="text/javascript" src="geometry.js"></script>
+      <script type="text/javascript" src="shader.js"></script>
+      <script type="text/javascript" src="scaling.js"></script>
+      <script type="text/javascript" src="rotation.js"></script>
+</html> 
